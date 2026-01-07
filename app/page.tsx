@@ -20,8 +20,7 @@ const HomePage = () => {
     setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
   };
 
-  const openWhatsApp = (msg) => {
-    window.open(`https://wa.me/56993663399?text=${encodeURIComponent(msg)}`, '_blank');
+  const openWhatsApp = (msg: string) => {    window.open(`https://wa.me/56993663399?text=${encodeURIComponent(msg)}`, '_blank');
   };
 
   return (
